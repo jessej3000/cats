@@ -74,9 +74,13 @@
 </template>
 
 <script setup lang="ts">
-    import { onMounted, computed, nextTick, ref } from 'vue';
+    // @ts-ignore
+    import { onMounted, nextTick, ref } from 'vue';
+    // @ts-ignore
     import * as SocialMedia from '../utils/social_media.tsx';
+    // @ts-ignore
     import { useRoute } from 'vue-router';
+    // @ts-ignore
     import { useStore } from 'vuex';
 
     const email = SocialMedia.email;
@@ -85,9 +89,21 @@
     const router = useRoute();
     const store = useStore();
     let response = '';
-    let details = {};
-
-    let loadTime = 0;
+    let details: {
+        url: string,
+        name: string,
+        origin: string,
+        temperament: string,
+        description: string,
+    } = {
+        url: '',
+        name: '',
+        origin: '',
+        temperament: '',
+        description: '',
+    };
+    
+    let loadTime = '';
     let startTime = 0;
     let renderComponent = ref(false);
 
@@ -100,7 +116,7 @@
     onMounted(() => {
         startTime = performance.now();
         const images = store.getters.getImages;
-        details = images.find((image: any) => image.id === router.params.id);
+        details = {...images.find((image: any) => image.id === router.params.id)};
         forceRender()
     });
   

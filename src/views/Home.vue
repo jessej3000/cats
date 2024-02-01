@@ -58,7 +58,7 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input v-on:click="toggelModal(true)" :checked="$store.getters.getModality" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input v-on:click="toggelModal(true)" :checked="$store.getters.getModality" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Modal
                             </label>
@@ -115,9 +115,13 @@
 
 
 <script setup lang="ts">
+    // @ts-ignore
     import Dropdown from '../components/DropDown.vue';
+    // @ts-ignore
     import Card from '../components/Card.vue';
+    // @ts-ignore
     import { useStore } from 'vuex';
+    // @ts-ignore
     import * as SocialMedia from '../utils/social_media.tsx';
 
     const email = SocialMedia.email;
@@ -125,7 +129,7 @@
     const twitter = SocialMedia.twitter;
     const store = useStore();
     
-    function toggelModal(value) {
+    function toggelModal(value: any) {
         store.commit('toggleModal', value);
     }
     function loadMore() {

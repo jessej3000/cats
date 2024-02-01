@@ -45,20 +45,19 @@
 </template>
 
 <script setup lang="ts">
+  // @ts-ignore
   import { onMounted, computed, nextTick, ref, toRefs } from 'vue';
-  import { useStore } from 'vuex';
 
   let loadTime = '';
   let startTime = 0;
   let renderComponent = ref(false);
-  const store = useStore();
   
   const forceRender = async () => {
     renderComponent.value = false;
     await nextTick();
     renderComponent.value = true;
   };
-  
+  // @ts-ignore
   const props = defineProps({
       name: String,
       id: String,
@@ -73,15 +72,16 @@
   const { description } = toRefs(props);
   
   onMounted(() => {
-      startTime = performance.now();
+    startTime = performance.now();
   });
   
   const truncatedDescription = computed(() => {
-    return (description.value.length > 100) ? `${description.value.slice(0, 100-1)}...` : description.value;
+    const desc = description?.value?? '';
+    return ( desc.length > 100) ? `${desc.slice(0, 100-1)}...` : desc;
   })
   function onImageLoad() {
-      loadTime = (performance.now() - startTime).toFixed(2);
-      forceRender();
+    loadTime = (performance.now() - startTime).toFixed(2);
+    forceRender();
   }
 </script>
 
