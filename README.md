@@ -1,12 +1,10 @@
 # Overview
-
 This is a small project created using Vue3 compositional api, Typescript, and vite. I use yarn for this project
 
 # Quickstart on firebase
 1. open this url https://cats-2ece8.web.app
 
 # Quickstart Local
-
 1. Download the files using git clone 
 2. Go into cats directory and run the following commands:
    A. yarn - to install all dependencies. (If you have no yarn installed you need to install it first 'npm install --global yarn')
@@ -27,8 +25,8 @@ This is a small project created using Vue3 compositional api, Typescript, and vi
 4. Why typescript - Capture errors earlier also for type safety.
 
 # Notes
-I used Bootstrap 5 instead, support for BootstraVue for Vue 3 seems to be very limited.
-I also considered other UI frameworks such as emelent-ui which is very popular with vue.
-But decided to use Bootstrap 5 to be inline with the requirement.
-   
+- I used Bootstrap 5 instead, support for BootstraVue for Vue 3 seems to be very limited.
+- I also considered other UI frameworks such as emelent-ui which is very popular with vue.
+- But decided to use Bootstrap 5 to be inline with the requirement.
+- UI Design can still be improved.
    
