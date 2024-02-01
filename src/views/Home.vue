@@ -15,9 +15,9 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                 <h4>Contact</h4>
                 <ul class="list-unstyled">
-                    <li><a :href="email" class="text-white">Email me</a></li>
-                    <li><a :href="fb" class="text-white">Like on Facebook</a></li>
-                    <li><a :href="twitter" class="text-white">Follow on Twitter</a></li>
+                    <li><a :href="email" class="text-white"><img class="social-icon" src="../assets/gmail.svg" />Email</a></li>
+                    <li><a :href="fb" class="text-white"><img class="social-icon" src="../assets/fb.png" />Facebook</a></li>
+                    <li><a :href="twitter" class="text-white"><img class="social-icon" src="../assets/twitter.svg" />Twitter</a></li>
                 </ul>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 <section class="py-2 text-center container col-10" style="margin-left:0px">
                     <div class="row py-lg-2">
                         <img class="col" src="../assets/teacher.webp" style="width:200px"/>
-                        <p class="col alert alert-warning">Cats are known for their agility, grooming rituals, and the comforting rhythm of their purrs. With a keen sense of independence, these feline companions have woven themselves into the fabric of human households worldwide.</p>
+                        <p class="col alert alert-warning" style="background-color:#cce4b4!important;border-color:#cce4b4!important">Cats are known for their agility, grooming rituals, and the comforting rhythm of their purrs. With a keen sense of independence, these feline companions have woven themselves into the fabric of human households worldwide.</p>
                     </div>
                 </section>
             </div>
@@ -140,3 +140,11 @@
         store.commit('showError', { message: '', status: 0 })
     }
 </script>
+
+<style scoped>
+    .social-icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+</style>
