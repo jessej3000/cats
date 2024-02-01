@@ -2,7 +2,10 @@
 
 This is a small project created using Vue3 compositional api, Typescript, and vite. I use yarn for this project
 
-# Quickstart
+# Quickstart on firebase
+1. open this url https://cats-2ece8.web.app
+
+# Quickstart Local
 
 1. Download the files using git clone 
 2. Go into cats directory and run the following commands:
@@ -13,5 +16,8 @@ This is a small project created using Vue3 compositional api, Typescript, and vi
 # Linting - uses eslint
 1. yarn lint   # This will show you any linting errors for typescript if any
 2. yarn lint-fix # Will automatically fix all fixable linting problems
+
+# Hosting
+1. A simple hosting is setup on firebase
    
    
