@@ -25,5 +25,10 @@ This is a small project created using Vue3 compositional api, Typescript, and vi
 2. Why vite - It is a fast bundler.
 3. Why yarn - It is better at package management and quite faster than npm.
 4. Why typescript - Capture errors earlier also for type safety.
+
+# Notes
+I used Bootstrap 5 instead, support for BootstraVue for Vue 3 seems to be very limited.
+I also considered other UI frameworks such as emelent-ui which is very popular with vue.
+But decided to use Bootstrap 5 to be inline with the requirement.
    
    
