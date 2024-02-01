@@ -1,5 +1,16 @@
-# Vue 3 + TypeScript + Vite
+# Overview
 
+This is a small project created using Vue3 compositional api, Typescript, and vite. I use yarn for this project
+
+# Quickstart
+
+1. Download the files using git clone 
+2. Go into cats directory and run the following commands:
+   A. yarn - to install all dependencies. (If you have no yarn installed you need to install it first 'npm install --global yarn')
+   B. yarn dev - to run the project
+   C. base on the ouput url use that to view the page. (ex. 'http://localhost:5173', port may vary)
+   
+   
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Recommended IDE Setup

@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, computed, nextTick, ref, emit, toRefs } from 'vue';
+  import { onMounted, computed, nextTick, ref, toRefs } from 'vue';
   import { useStore } from 'vuex';
 
   let loadTime = '';
