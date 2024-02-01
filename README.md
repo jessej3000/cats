@@ -19,5 +19,11 @@ This is a small project created using Vue3 compositional api, Typescript, and vi
 
 # Hosting
 1. A simple hosting is setup on firebase
+
+# Whys
+1. Why use composition API - It is not necessary for small project like this. I just used it for demonstration.
+2. Why vite - It is a fast bundler.
+3. Why yarn - It is better at package management and quite faster than npm.
+4. Why typescript - Capture errors earlier also for type safety.
    
    
